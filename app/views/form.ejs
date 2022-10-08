@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Agregar producto</h2>
+        <form action="/" method="post">
+            <input class="form_field" type="text" placeholder="Nombre del producto" id="title" name="title">
+            <input class="form_field" type="number" placeholder="Precio del producto" id="price" name="price">
+            <input class="form_field" type="text" placeholder="Imágen del producto (url)" id="thumbnail" name="thumbnail">
+            <div>
+                <input class="form_button" type="submit" value="Agregar">
+            </div>
+        </form>
+        <div>
+            <a href="/productos">Ver productos</a>
+        </div>
+    </div>
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 680px;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    form {
+        width: 18.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.5s ease-in;
+    }
+
+    form .form_field {
+        width: 300px;
+        padding: 1em;
+        border-radius: 10px;
+        border: black solid 1px;
+        outline: none;
+    }
+
+    form .form_field:focus {
+        border: brown solid 1px;
+    }
+
+    form div {
+        display: flex;
+        justify-content: end;
+    }
+
+    form .form_button {
+        width: 150px;
+        padding: 10px;
+        font-size: 1em;
+        color: whitesmoke;
+        background-color: brown;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .container > div {
+        width: 100%;
+        margin-top: 50px;
+        padding-right: 20px;
+        text-align: end;
+    }
+
+    a{
+        padding: 10px;
+        font-size: 1em;
+        color: whitesmoke;
+        border-radius: 10px;
+        background-color: brown;
+        text-decoration: none;
+    }
+</style>
+</html>
